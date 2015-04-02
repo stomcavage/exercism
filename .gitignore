@@ -1,0 +1,12 @@
+*.md
+*test*
+cpp/*
+elixir/*
+java/*
+lisp/*
+ocaml/*
+perl5/*
+php/*
+plsql/*
+python/*
+scala/*
