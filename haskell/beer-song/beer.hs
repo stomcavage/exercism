@@ -18,6 +18,5 @@ secondLine 2 = "Take one down and pass it around, 1 bottle of beer on the wall."
 secondLine n = "Take one down and pass it around, " ++ show (n - 1) ++ " bottles of beer on the wall."
 
 sing :: Int -> Int -> String
-sing start end = unlines $ map verse selected
-  where selected = unfoldr (\n -> if n < end then Nothing else Just (n, n - 1)) start
+sing start end = unlines $ map verse [start, start - 1 .. end]
 
